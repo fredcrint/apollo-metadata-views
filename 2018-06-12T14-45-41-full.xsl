@@ -390,15 +390,6 @@
                                             </xsl:for-each>
                                         </ol>
                                     </td>
-                                    <td class="wideo"> atl1 <xsl:value-of select="assettrackerlevel01"/>
-                                        <br/> atl2 <xsl:value-of select="assettrackerlevel02"/>
-                                        <br/> atl3 <xsl:value-of select="assettrackerlevel03"/>
-                                        <br/> atl4 <xsl:value-of select="assettrackerlevel04"/>
-                                        <br/> v <xsl:value-of select="boxlevelv"/>
-                                        <br/> w <xsl:value-of select="boxlevelw"/>
-                                        <br/> x <xsl:value-of select="boxlevelx"/>
-                                        <br/> y <xsl:value-of select="boxlevely"/>
-                                        <br/> z <xsl:value-of select="boxlevelz"/>
                                         <br/> 1 <xsl:value-of select="boxlevel01"/><xsl:if test="boxlevel01/@id != ''"><xsl:text> (</xsl:text><xsl:value-of select="boxlevel01/@id"/><xsl:text>)</xsl:text></xsl:if>
                                         <br/> 2 <xsl:value-of select="boxlevel02"/><xsl:if test="boxlevel02/@id != ''"><xsl:text> (</xsl:text><xsl:value-of select="boxlevel02/@id"/><xsl:text>)</xsl:text></xsl:if>
                                         <br/> 3 <xsl:value-of select="boxlevel03"/><xsl:if test="boxlevel03/@id != ''"><xsl:text> (</xsl:text><xsl:value-of select="boxlevel03/@id"/><xsl:text>)</xsl:text></xsl:if>
