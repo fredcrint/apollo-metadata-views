@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="apolloassets">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="apolloasset"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="apolloasset">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="capturestamp"/>
+        <xs:element ref="assettrackerlevel01"/>
+        <xs:element ref="assettrackerlevel02"/>
+        <xs:element ref="assettrackerlevel03"/>
+        <xs:element ref="assettrackerlevel04"/>
+        <xs:element ref="apppartnumber"/>
+          <xs:element ref="radarinformation" minOccurs="0"/>
+          <xs:element ref="seedexportspreadsheetrow" minOccurs="0"></xs:element>
+          <xs:element ref="boxlevelv" minOccurs="0"/>
+          <xs:element ref="boxlevelw"/>
+          <xs:element ref="boxlevelx"/>
+          <xs:element ref="boxlevely"/>
+          <xs:element ref="boxlevelz"/>
+        <xs:element ref="boxlevel01"/>
+        <xs:element ref="boxlevel02"/>
+        <xs:element ref="boxlevel03"/>
+        <xs:element ref="boxlevel04"/>
+        <xs:element ref="boxdataitemtype"/>
+        <xs:element ref="boxid"/>
+        <xs:element ref="history"/>
+        <xs:element ref="priority"/>
+        <xs:element ref="stagingcheck"/>
+        <xs:element ref="setmetadatasearchtags"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="capturestamp" type="xs:dateTime"/>
+  <xs:element name="assettrackerlevel01">
+    <xs:complexType mixed="true">
+      <xs:attribute name="label01" type="xs:NCName"/>
+      <xs:attribute name="label02" type="xs:NCName"/>
+      <xs:attribute name="source01"/>
+      <xs:attribute name="source02"/>
+      <xs:attribute name="usinglabel" type="xs:NCName"/>
+      <xs:attribute name="usingsource" type="xs:NCName"/>
+      <xs:attribute name="partnumber" use="optional"/>
+      <xs:attribute name="formerly" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="assettrackerlevel02">
+    <xs:complexType mixed="true">
+      <xs:attribute name="label01" type="xs:NCName"/>
+      <xs:attribute name="label02" type="xs:NCName"/>
+      <xs:attribute name="source01"/>
+      <xs:attribute name="source02"/>
+      <xs:attribute name="usinglabel" type="xs:NCName"/>
+      <xs:attribute name="usingsource" type="xs:NCName"/>
+      <xs:attribute name="partnumber" use="optional"/>
+      <xs:attribute name="formerly" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="assettrackerlevel03">
+    <xs:complexType mixed="true">
+      <xs:attribute name="label01" type="xs:NCName"/>
+      <xs:attribute name="label02" type="xs:NCName"/>
+      <xs:attribute name="source01"/>
+      <xs:attribute name="source02"/>
+      <xs:attribute name="usinglabel" type="xs:NCName"/>
+      <xs:attribute name="usingsource" type="xs:NCName"/>
+      <xs:attribute name="partnumber" use="optional"/>
+      <xs:attribute name="formerly" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="assettrackerlevel04">
+    <xs:complexType mixed="true">
+      <xs:attribute name="label01" type="xs:NCName"/>
+      <xs:attribute name="label02" type="xs:NCName"/>
+      <xs:attribute name="source01"/>
+      <xs:attribute name="source02"/>
+      <xs:attribute name="usinglabel" type="xs:NCName"/>
+      <xs:attribute name="usingsource" type="xs:NCName"/>
+      <xs:attribute name="partnumber" use="optional"/>
+      <xs:attribute name="formerly" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="apppartnumber" type="xs:string"/>
+    <xs:element name="radarinformation">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element ref="radarcomponents"/>
+                <xs:element ref="radarproblems"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="radarcomponents">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element ref="radarcomponent" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="radarproblems">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element ref="radarproblem" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="radarcomponent">
+        <xs:complexType mixed="true">
+            <xs:attribute name="id" type="xs:long"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="radarproblem">
+        <xs:complexType mixed="true">
+            <xs:attribute name="id" type="xs:long"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="seedexportspreadsheetrow">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element ref="sscol" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="sscol">
+        <xs:complexType mixed="true">
+            <xs:attribute name="name" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="boxlevelv">
+        <xs:complexType mixed="true">
+            <xs:attribute name="id" use="optional"/>
+            <xs:attribute name="formerly" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="boxlevelw">
+        <xs:complexType mixed="true">
+            <xs:attribute name="id" use="optional"/>
+            <xs:attribute name="formerly" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="boxlevelx">
+        <xs:complexType mixed="true">
+            <xs:attribute name="id" use="optional"/>
+            <xs:attribute name="formerly" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="boxlevely">
+        <xs:complexType mixed="true">
+            <xs:attribute name="id" use="optional"/>
+            <xs:attribute name="formerly" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="boxlevelz">
+        <xs:complexType mixed="true">
+            <xs:attribute name="id" use="optional"/>
+            <xs:attribute name="formerly" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="boxlevel01">
+        <xs:complexType mixed="true">
+            <xs:attribute name="id" use="optional"/>
+            <xs:attribute name="formerly" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+  <xs:element name="boxlevel02">
+      <xs:complexType mixed="true">
+          <xs:attribute name="id" use="optional"/>
+          <xs:attribute name="formerly" use="optional"/>
+      </xs:complexType>
+  </xs:element>
+  <xs:element name="boxlevel03">
+      <xs:complexType mixed="true">
+          <xs:attribute name="id" use="optional"/>
+          <xs:attribute name="formerly" use="optional"/>
+      </xs:complexType>
+  </xs:element>
+  <xs:element name="boxlevel04">
+      <xs:complexType mixed="true">
+          <xs:attribute name="id" use="optional"/>
+          <xs:attribute name="formerly" use="optional"/>
+      </xs:complexType>
+  </xs:element>
+  <xs:element name="boxdataitemtype">
+    <xs:complexType mixed="true">
+      <xs:attribute name="state" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="boxid" type="xs:string"/>
+  <xs:element name="history">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="event"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="priority">
+    <xs:complexType>
+      <xs:attribute name="conventionalpriority" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="stagingcheck">
+    <xs:complexType>
+      <xs:attribute name="conventionalcheck" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="setmetadatasearchtags">
+    <xs:complexType>
+      <xs:attribute name="conventionalstatussetmetadatasearchtags" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="event">
+    <xs:complexType mixed="true">
+        <xs:sequence>
+            <xs:element ref="stamp"/>
+            <xs:element ref="url1"/>
+            <xs:element ref="title" minOccurs="0"/>
+            <xs:element ref="surtitle" minOccurs="0"/>
+            <xs:element ref="generalnotes"/>
+            <xs:element ref="template" minOccurs="0"/>
+            <xs:element ref="empowerid" minOccurs="0"/>
+            <xs:element ref="subjectline"/>
+            <xs:element ref="versions" minOccurs="0"/>
+            <xs:element ref="editorrequestingchanges" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="versions">
+      <xs:complexType>
+          <xs:sequence>
+              <xs:element ref="version" maxOccurs="unbounded"/>
+          </xs:sequence>
+      </xs:complexType>
+  </xs:element>
+  <xs:element name="version" type="xs:string"/>
+  <xs:element name="editorrequestingchanges">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="changes"/>
+      </xs:sequence>
+      <xs:attribute name="editorname" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="changes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="change"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="change">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pagenumber"/>
+        <xs:element ref="newtext"/>
+      </xs:sequence>
+      <xs:attribute name="changetype" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="pagenumber" type="xs:integer"/>
+  <xs:element name="newtext" type="xs:string"/>
+  <xs:element name="empowerid" type="xs:string"/>
+  <xs:element name="generalnotes">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="br"/>
+        <xs:element ref="p"/>
+        <xs:element ref="pre"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="p">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="br"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="pre" type="xs:string"/>
+  <xs:element name="stamp" type="xs:NMTOKEN"/>
+  <xs:element name="subjectline">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:anyURI">
+          <xs:attribute name="extra"/>
+          <xs:attribute name="filename"/>
+          <xs:attribute name="generated" type="xs:dateTime"/>
+          <xs:attribute name="localfoldername"/>
+          <xs:attribute name="requeststatus" use="optional">
+              <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                      <xs:enumeration value="08 not uploaded"/>
+                      <xs:enumeration value="not drafted"/>
+                      <xs:enumeration value="sent"/>
+                      <xs:enumeration value="sent, awaiting ruling"/>
+                      <xs:enumeration value="sent, action complete"/>
+                      <xs:enumeration value="10 done"/>
+                      <xs:enumeration value="migrated"/>
+                      <xs:enumeration value=""></xs:enumeration>
+                  </xs:restriction>
+              </xs:simpleType>
+          </xs:attribute>
+            <xs:attribute name="requesttype" use="optional">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="migration"/>
+                        <xs:enumeration value="for editing"/>
+                        <xs:enumeration value="for graphics"/>
+                        <xs:enumeration value="for media"/>
+                        <xs:enumeration value="for building"/>
+                        <xs:enumeration value="FOR STAGING"/>
+                        <xs:enumeration value="for QA review"/>
+                        <xs:enumeration value="for loading to production server"/>
+                        <xs:enumeration value="for ID guidance"/>
+                        <xs:enumeration value="from editing"></xs:enumeration>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="template">
+    <xs:complexType mixed="true">
+      <xs:attribute name="conventionaltemplate"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="url1" type="xs:anyURI"/>
+    <xs:element name="title" type="xs:string"/>
+    <xs:element name="surtitle" type="xs:string"/>
+  <xs:element name="br">
+    <xs:complexType/>
+  </xs:element>
+</xs:schema>
