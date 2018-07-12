@@ -1,0 +1,5 @@
+table {border-collapse: collapse;}
+th,td {padding: 6px; vertical-align: top;}
+.wrappo {white-space: nowrap;}
+.greyo {color: gray !important;}
+.righto {text-align: right;}
