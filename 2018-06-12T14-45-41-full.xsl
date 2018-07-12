@@ -390,15 +390,15 @@
                                             </xsl:for-each>
                                         </ol>
                                     </td>
-                                    <td class="wideo"> atl1 <xsl:value-of select="assettrackerlevel01"/>
-                                        <br/> atl2 <xsl:value-of select="assettrackerlevel02"/>
-                                        <br/> atl3 <xsl:value-of select="assettrackerlevel03"/>
-                                        <br/> atl4 <xsl:value-of select="assettrackerlevel04"/>
-                                        <br/> v <xsl:value-of select="boxlevelv"/>
-                                        <br/> w <xsl:value-of select="boxlevelw"/>
-                                        <br/> x <xsl:value-of select="boxlevelx"/>
-                                        <br/> y <xsl:value-of select="boxlevely"/>
-                                        <br/> z <xsl:value-of select="boxlevelz"/>
+                                    <td class="wideo"> atl1 <xsl:value-of select="assettrackerlevel01"/><xsl:if test="assettrackerlevel01/@partnumber != ''"><xsl:text> (</xsl:text><xsl:value-of select="assettrackerlevel01/@partnumber"/><xsl:text>)</xsl:text></xsl:if>
+                                        <br/> atl2 <xsl:value-of select="assettrackerlevel02"/><xsl:if test="assettrackerlevel02/@partnumber != ''"><xsl:text> (</xsl:text><xsl:value-of select="assettrackerlevel02/@partnumber"/><xsl:text>)</xsl:text></xsl:if>
+                                        <br/> atl3 <xsl:value-of select="assettrackerlevel03"/><xsl:if test="assettrackerlevel03/@partnumber != ''"><xsl:text> (</xsl:text><xsl:value-of select="assettrackerlevel03/@partnumber"/><xsl:text>)</xsl:text></xsl:if>
+                                        <br/> atl4 <xsl:value-of select="assettrackerlevel04"/><xsl:if test="assettrackerlevel04/@partnumber != ''"><xsl:text> (</xsl:text><xsl:value-of select="assettrackerlevel04/@partnumber"/><xsl:text>)</xsl:text></xsl:if>
+                                        <br/> v <xsl:value-of select="boxlevelv"/><xsl:if test="boxlevelv/@id != ''"><xsl:text> (</xsl:text><xsl:value-of select="boxlevelv/@id"/><xsl:text>)</xsl:text></xsl:if>
+                                        <br/> w <xsl:value-of select="boxlevelw"/><xsl:if test="boxlevelw/@id != ''"><xsl:text> (</xsl:text><xsl:value-of select="boxlevelw/@id"/><xsl:text>)</xsl:text></xsl:if>
+                                        <br/> x <xsl:value-of select="boxlevelx"/><xsl:if test="boxlevelx/@id != ''"><xsl:text> (</xsl:text><xsl:value-of select="boxlevelx/@id"/><xsl:text>)</xsl:text></xsl:if>
+                                        <br/> y <xsl:value-of select="boxlevely"/><xsl:if test="boxlevely/@id != ''"><xsl:text> (</xsl:text><xsl:value-of select="boxlevely/@id"/><xsl:text>)</xsl:text></xsl:if>
+                                        <br/> z <xsl:value-of select="boxlevelz"/><xsl:if test="boxlevelz/@id != ''"><xsl:text> (</xsl:text><xsl:value-of select="boxlevelz/@id"/><xsl:text>)</xsl:text></xsl:if>
                                         <br/> 1 <xsl:value-of select="boxlevel01"/><xsl:if test="boxlevel01/@id != ''"><xsl:text> (</xsl:text><xsl:value-of select="boxlevel01/@id"/><xsl:text>)</xsl:text></xsl:if>
                                         <br/> 2 <xsl:value-of select="boxlevel02"/><xsl:if test="boxlevel02/@id != ''"><xsl:text> (</xsl:text><xsl:value-of select="boxlevel02/@id"/><xsl:text>)</xsl:text></xsl:if>
                                         <br/> 3 <xsl:value-of select="boxlevel03"/><xsl:if test="boxlevel03/@id != ''"><xsl:text> (</xsl:text><xsl:value-of select="boxlevel03/@id"/><xsl:text>)</xsl:text></xsl:if>
